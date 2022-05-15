@@ -22,9 +22,9 @@
       "baseUrl": "./src",
       "paths": {
         "*": ["node_modules/*"],
-        "@controllers/*": ["controllers/*"],
-        "@models/*": ["models/*"],
-        "@route/*": ["route/*"],
+        "@controllers/*": ["api/controllers/*"],
+        "@models/*": ["api/models/*"],
+        "@route/*": ["api/route/*"],
       },
     },
     "include": [
