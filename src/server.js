@@ -16,7 +16,7 @@ app.use(express.static('public'));
 mongoose.connect(MONGODB_URI, function (err) {
     if (err) 
         throw err;
-    console.log('Successfully connected');
+    console.log('Mongo Connected');
 })
 
 //===LISTEN PORT===
