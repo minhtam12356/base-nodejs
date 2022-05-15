@@ -2,6 +2,7 @@ import cors from 'cors';
 import 'dotenv/config';
 import express from "express";
 import mongoose from 'mongoose';
+import productsRoute from './api/route/products.route.js';
 
 const app = express();
 const { PORT, MONGODB_URI = "" } = process.env;
@@ -23,3 +24,7 @@ mongoose.connect(MONGODB_URI, function (err) {
 app.listen(port, function(){
     console.log(`Server listening on port ${port}`)
 })
+
+//===API===
+app.use('/', productsRoute);
+app.use('/login', LoginRouter);
